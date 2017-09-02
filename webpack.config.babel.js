@@ -63,6 +63,15 @@ export default () => ({
           "sass-loader?sourceMap",
           "resolve-url-loader"
         ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}  
+          }
+        ]
       }
     ]
   },

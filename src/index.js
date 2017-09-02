@@ -1,10 +1,10 @@
 import ReactDOM from "react-dom"
 import React from "react"
-import RegisterContainer from "./containers/Register"
-import "./index.scss"
+import RootRouter from "./common/RootRouter"
+
 
 
 ReactDOM.render(
-   <RegisterContainer /> ,
+   <RootRouter /> ,
 document.getElementById("root")
 )

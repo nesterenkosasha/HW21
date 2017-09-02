@@ -1,0 +1,41 @@
+@import "~bulma";
+
+.home {
+    background:url('./Image/bg.jpg') no-repeat 0% 87% fixed;
+    height: 800px;
+    width: 1200px;
+}
+.features{
+    font-size: 30px;
+    height: 100px;
+    width: 1200px;
+}
+.features-first{
+    background-color: lightgreen;
+    height: 80px;
+    width: 800px;
+}
+.features-second{
+    background-color: #D18AB1;
+    height: 80px;
+    width: 800px;
+}
+.features-third{
+    background-color: #DAEE90;
+    height: 80px;
+    width: 800px;
+}
+.features-fouth{
+    background-color: #4339B0;
+    height: 80px;
+    width: 800px;
+}
+.helpImg{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background:url('../Help/Image/help.jpg') no-repeat 0% 87% fixed;
+    height: 400px;
+    width: 1200px;
+}
+
