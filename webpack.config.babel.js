@@ -72,6 +72,10 @@ export default () => ({
             options: {}  
           }
         ]
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   },

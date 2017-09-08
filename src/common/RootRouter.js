@@ -1,12 +1,8 @@
 import React from "react"
 import { Router, Route, IndexRoute, browserHistory } from "react-router"
-import FeaturesContainer from "../containers/Features"
-import HomeContainer from "../containers/Home"
-import HelpContainer from "../containers/Help"
-import TeamContainer from "../containers/Team"
-import SignUpContainer from "../containers/SignUp"
-import LogInContainer from "../containers/LogIn"
+import LayoutContainer from "../containers/Layout"
 
+import SomeComponent from "../containers/Some"
 
 
 export default class RootRouter extends React.PureComponent {
@@ -14,14 +10,9 @@ export default class RootRouter extends React.PureComponent {
     return (
       <Router history={browserHistory}>
         <Route path="/">
-          <IndexRoute component={HomeContainer} />
-          <Route path="home" component={HomeContainer} />
-          <Route path="features" component={FeaturesContainer} />
-          <Route path="help" component={HelpContainer} />
-          <Route path="login" component={LogInContainer} />
-          <Route path="signup" component={SignUpContainer} />
-          <Route path="team" component={TeamContainer} />
-         
+          <Route path="jackets" component={LayoutContainer} />
+          <Route path="jackets/:jacketsId" component={SomeComponent} />
+          
         </Route>
       </Router>
     )
